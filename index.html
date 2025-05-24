@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INDIAS BEST FOOD ITEMS</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 40px 20px 20px;
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu-item {
+      background-color: #ffffff;
+      width: 300px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .menu-title {
+      position: absolute;
+      top: -15px;
+      right: 20px;
+      padding: 8px 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      border: none;
+      color: #fff;
+      font-size: 1em;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .chickenBiryani .menu-title {
+      background-color: #ff7f50; /* Coral */
+    }
+
+    .Meals .menu-title {
+      background-color: #dc143c; /* Crimson */
+    }
+
+    .Panipoori .menu-title {
+      background-color: #ffcc00; /* Gold */
+      color: #333;
+    }
+
+    .menu-item p {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .menu-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu-item {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Menu Item</h1>
+  
+  <div class="menu-container">
+    <div class="menu-item chickenBiryani">
+      <div class="menu-title">Chicken Biryani</div>
+         <p>The traditional method of cooking chicken biryani involves a technique known as “dum.” This involves sealing the pot tightly and cooking the biryani over low heat, allowing the flavors to meld and develop. The result is a succulent and flavorful dish that showcases the culinary artistry of India.</p>
+    </div>
+    
+    <div class="menu-item Meals">
+      <div class="menu-title">Meals</div>
+      <p>Everyday Indian Meals are packed with nutrient-rich foods, including whole grains, lean meats, and plenty of fresh fruits and vegetables. </p>
+
+    </div>
+    
+    <div class="menu-item Panipoori">
+      <div class="menu-title">Panipoori</div>
+            <p>Pani poori, the Queen of street food is a mouth-watering dish and loved by everyone. With fried dough balls filled with mashed potatoes spicy and sweet water, pani puri explodes several flavors in your mouth. Resisting pani puri or golgappa is next to impossible because of its rich and unique taste</p>
+
+    </div>
+  </div>
+</body>
+</html>
